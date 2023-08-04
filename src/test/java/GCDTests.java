@@ -16,7 +16,7 @@ public class GCDTests {
         Instant start = Instant.now();
         Long actual = gcd1.greatestCommonDivisor(12L, 8L);
         Instant finish = Instant.now();
-        System.out.println(Duration.between(start,finish).toMillis());
+        System.out.println(Duration.between(start,finish).toNanos());
         //then
 
         Assert.assertEquals(expected,actual);
@@ -32,7 +32,7 @@ public class GCDTests {
         Instant start = Instant.now();
         Long actual = gcd1.greatestCommonDivisor(1440L, 408L);
         Instant finish = Instant.now();
-        System.out.println(Duration.between(start,finish).toMillis());
+        System.out.println(Duration.between(start,finish).toNanos());
         //then
 
         Assert.assertEquals(expected,actual);
@@ -60,7 +60,7 @@ public class GCDTests {
         Instant start = Instant.now();
         Long actual = gcd1.greatestCommonDivisor2(1440L, 408L);
         Instant finish = Instant.now();
-        System.out.println(Duration.between(start,finish).toMillis());
+        System.out.println(Duration.between(start,finish).toNanos());
         //then
 
         Assert.assertEquals(expected,actual);

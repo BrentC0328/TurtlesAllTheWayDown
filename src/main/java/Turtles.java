@@ -7,7 +7,6 @@ import java.time.Instant;
 public class Turtles {
 
     public long factorial(int n) {
-        Instant start = Instant.now();
         if (n == 1){
             return 1;
         }
